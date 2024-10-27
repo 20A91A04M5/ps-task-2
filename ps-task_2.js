@@ -1,4 +1,3 @@
-
                     /////MOvie tickets
 
 let movie=prompt("enter type of movie")
@@ -13,6 +12,8 @@ switch(movie){
             case  ("VIP Seat"):
                 console.log(`${movie} Movie ${seat} is 20Rs`)
                 break
+            default:
+                console.log("invalid seat name")
         }
     break
     case ("Comedy"):
@@ -23,6 +24,8 @@ switch(movie){
             case  ("VIP Seat"):
                 console.log(`${movie} Movie ${seat} is 15Rs`)
                 break
+            default:
+                console.log("invalid seat name")
         }
     break
     case ("Drama"):
@@ -33,6 +36,8 @@ switch(movie){
             case  ("VIP Seat"):
                 console.log(`${movie} Movie ${seat} is 12Rs`)
                 break
+            default:
+                console.log("invalid seat name")
         }
     break
     default:
@@ -41,10 +46,10 @@ switch(movie){
 
                     /// e-commerces ///////
 
-const cat = prompt("Enter Cat : ");
+const cat = prompt("Enter Categories : ");
 var proName = prompt("Enter proName : ")
 switch(cat){
-    case "ele":
+    case "electronics":
         switch(proName){
             case "mobile":
                 console.log("discount is 5%")
@@ -55,9 +60,11 @@ switch(cat){
             case "ac":
                 console.log("discount is 25%")
                 break;
+            default:
+                console.log("invalid product name")
         }
         break;
-    case "cloth":
+    case "clothing":
                 switch(proName){
             case "tshirt":
                 console.log("discount is 5%")
@@ -68,19 +75,23 @@ switch(cat){
             case "saree":
                 console.log("discount is 25%")
                 break;
+            default:
+                console.log("invalid product name")
         }
         break;
-    case "jewel":
+    case "grocery":
                 switch(proName){
-            case "gold":
+            case "fruits":
                 console.log("discount is 5%")
                 break;
-            case "ring":
+            case "vegetables":
                 console.log("discount is 15%")
                 break;
-            case "chain":
+            case "non-veg":
                 console.log("discount is 25%")
                 break;
+            default:
+                console.log("invalid product name")
         }
         break;
         default:
@@ -101,6 +112,8 @@ switch(mode){
             case  ("Business Seat"):
                 console.log(`${mode} Mode ${seats} is 2000Rs`)
                 break
+            default:
+                console.log("invalid seat name")
         }
     break
     case ("Train"):
@@ -111,6 +124,8 @@ switch(mode){
             case  ("AC Class Seat"):
                 console.log(`${mode} Mode ${seats} is 800Rs`)
                 break
+            default:
+                console.log("invalid seat name")
         }
     break
     case ("Bus"):
@@ -121,11 +136,17 @@ switch(mode){
             case  ("Luxury Seat"):
                 console.log(`${mode} Mode ${seats} is 800Rs`)
                 break
+            default:
+                console.log("invalid seat name")
         }
     break
     default:
     console.log("enter valid Mode and seat Names")
 }
+
+
+
+
 
 
 
